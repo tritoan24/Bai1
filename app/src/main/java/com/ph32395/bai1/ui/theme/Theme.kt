@@ -34,7 +34,7 @@ private val LightColorScheme = lightColorScheme(
 )
 
 @Composable
-fun Bai1Theme(
+fun Bai_1Theme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     // Dynamic color is available on Android 12+
     dynamicColor: Boolean = true,
@@ -53,6 +53,14 @@ fun Bai1Theme(
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
+        content = content
+    )
+}
+
+// Xay dung giao dien nguoi dung ttuc quan
+@Composable
+fun MyApplicationTheme(content: @Composable () -> Unit) {
+    MaterialTheme(
         content = content
     )
 }
